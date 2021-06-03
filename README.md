@@ -1,7 +1,7 @@
 # 1. Setup
 ## 1.1 Anaconda virtual environment
 
-Create a conda environment named DL_env with all dependencies, run below
+Create a conda environment named DL_env with all dependencies by running below
 ```
 conda env create -f environment.yml
 ```
