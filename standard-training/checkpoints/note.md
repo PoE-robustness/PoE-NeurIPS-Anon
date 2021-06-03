@@ -1,0 +1,1 @@
+Download all model checkpoints from box to this folder.
