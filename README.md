@@ -5,6 +5,11 @@ Create a conda environment named DL_env with all dependencies by running below
 ```
 conda env create -f environment.yml
 ```
+Activate the created conda env and install autoattack via below
+```
+conda activate DL_env
+pip install git+https://github.com/fra31/auto-attack
+```
 
 *Please note that we used a server with 2 Nvidia GPUs (each with 24 GB memory) for our code below.*
 
@@ -172,6 +177,8 @@ python autoattack_evaluation.py --model_path Wide-RST_${lr}/checkpoint-epoch200.
 ```
 cd adversarial-training/PGD-AT/
 ```
+#### 3.2.4.0 Install apex from NVIDIA by following Quick Start instructions at below link
+https://github.com/NVIDIA/apex
 #### 3.2.4.1 SOTA PGD-AT, Lipschitz estimation
 ```
 python robust_train.py --lr 0.1 --dataset cifar --data ./data --arch resnet50 --batch-size 256 --out-dir PGD-AT --exp-name SOTA_0.1 \
